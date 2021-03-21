@@ -1,0 +1,23 @@
+{
+  "name": "tensorflow-api",
+  "version": "0.1.0",
+  "description": "Simple Tensorflow.js API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/andrasbacsai/tensorflow-api",
+  "author": "Andras Bacsai",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^3.3.0",
+    "fastify": "^3.14.0",
+    "node-fetch": "^2.6.1",
+    "pureimage": "^0.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
