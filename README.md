@@ -7,7 +7,7 @@ It reflects my current knowledge about it, which is not much, but honest work. 
 # Currently available 
 - Tensorflow.js ImageClassifier
 
-# How to use?
+# How to use it?
 1. Go to [Teachablemachine](https://teachablemachine.withgoogle.com/train/image) and add images to different classes.
 2. Save the model with a shareable link and copy the link. (e.g., https://teachablemachine.withgoogle.com/models/3RcVEQiII/)
 3. Send a POST request to https://ml.andrasbacsai.dev/api/tensorflowjs/imageClassifier, with the following data:
@@ -19,17 +19,22 @@ It reflects my current knowledge about it, which is not much, but honest work. 
 ```
 4. Ta-da. üéâ
 
-> Classification does not work perfectly! There are so many things to learn/tweak in this field.
 
 # Example 
+
+The example model could differentiate between a dog, a cat, a monkey or a squirrel. You could try it to send a different picture!
+
+> Classification does not work perfectly! There are so many things to learn/tweak in this field.
 
 ```bash 
 curl -X POST -H "Content-type: application/json" -d '{"modelUrl":"https://teachablemachine.withgoogle.com/models/3RcVEQiII/","imageUrl":"https://www.rover.com/blog/wp-content/uploads/2018/12/dog-sneeze-1-1024x945.jpg"}' https://ml.andrasbacsai.dev/api/tensorflowjs/imageClassifier
 ```
 
+It is hosted on a small server. You can easily overload it - please don't! üòÅ
+
 # Roadmap
-- Frontend to see what's going on
-- Teach model without teachablemachine.
+- Frontend to see what's going on.
+- Train model without teachablemachine.
 - Who knows?!
 
 Follow me on Twitter at [@andrasbacsai](https://twitter.com/andrasbacsai) to get updates or star this repository.
