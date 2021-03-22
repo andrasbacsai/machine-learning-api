@@ -25,7 +25,7 @@ const schema = {
 fastify.get('/', (request, reply) =>{
     return {
         'Hey': 'Serious Machine Learning things going on here!',
-        'README':'https://github.com/andrasbacsai/machine-learning-api/README.md'
+        'README':'https://github.com/andrasbacsai/machine-learning-api'
     }
 })
 
